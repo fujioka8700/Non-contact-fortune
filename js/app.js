@@ -8,6 +8,7 @@ const fortune = ['大吉', '中吉', '小吉', '吉', '凶'];
 
 const fortuneNum = Math.floor(Math.random() * 5);
 let count = Math.floor(Math.random() * 2) + 2;
+resultDisp(0);
 
 function fortuneCharacter() {
     result.textContent = fortune[fortuneNum];
