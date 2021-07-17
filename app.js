@@ -1,4 +1,4 @@
-const cow = document.getElementById("cow");
+const tiger = document.getElementById("tiger");
 const sensor = document.getElementById("sensor");
 const anime = document.getElementById("anime");
 const result = document.getElementById("result");
@@ -15,7 +15,7 @@ function fortuneCharacter() {
 
 function resultDisp(count) {
     if (count <= 0) {
-        cow.style.display = 'none';
+        tiger.style.display = 'none';
         result.style.display = 'block';
         fortuneCharacter();
     }
