@@ -35,6 +35,6 @@ sensor.addEventListener("mouseover", function (event) {
 console.log(fortuneNum);
 console.log(count);
 
-reload.onclick = function() {
+reload.onclick = function () {
     window.location.reload();
 }
