@@ -34,6 +34,19 @@
     -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
     font-size: 2em;
+    position: relative;
+}
+
+#tiger_pos {
+    position: absolute;
+    top: 10px;
+    left: 80px;
+}
+
+#fortune_str {
+    position: absolute;
+    top: 12px;
+    left: 240px;
 }
 
 #hand-field {
@@ -44,4 +57,10 @@
 
 .arrow_right {
     transform: scale(-1, 1);
+}
+
+#fortune_str {
+    background-color: #fff;
+    padding: 3px 0 3px 5px;
+    border-radius: 5px;
 }
