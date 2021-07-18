@@ -1,3 +1,15 @@
+body {
+  background: blue;
+}
+
+h1 {
+  text-align: center;
+}
+
+#main_content {
+  background: #fff;
+}
+
 #sensor {
   /* background-color: red; */
   /* width: 100px; */
@@ -61,5 +73,10 @@
   background-color: #fff;
   padding: 3px 0 3px 5px;
   border-radius: 5px;
+}
+
+.button_style {
+  width: 300px;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

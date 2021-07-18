@@ -12,27 +12,31 @@
 </head>
 
 <body>
-    <div class="container">
-
-        <div id="result"></div>
-        <div id="tiger">
-            <div class="blockDown">
-                <img src="image/back_tiger.png" alt="">
-            </div>
-            <div id="anime" class="animate__animated animate__fast">
-                <div class="blockUp">
-                    <img src="image/fortune_tiger.png" alt="">
+    <h1>非接触おみくじ</h1>
+    <div class="container d-flex justify-content-center">
+        <div id="main_content">
+            <div id="result"></div>
+            <div id="tiger">
+                <div class="blockDown">
+                    <img src="image/back_tiger.png" alt="">
+                </div>
+                <div id="anime" class="animate__animated animate__fast">
+                    <div class="blockUp">
+                        <img src="image/fortune_tiger.png" alt="">
+                    </div>
                 </div>
             </div>
+            <div id="hand-field" class="d-flex justify-content-around align-items-center">
+                <div class="hand_image"><img src="image/hand.png" alt=""></div>
+                <div class="arrow_img"><img src="image/arrow.png" alt=""></div>
+                <div id="sensor"><img src="image/sensor.png" alt=""></div>
+                <div class="arrow_img arrow_right"><img src="image/arrow.png" alt=""></div>
+                <div class="hand_image"><img src="image/hand.png" alt=""></div>
+            </div>
+            <div class="button_style">
+                <button id="reload" type="button" class="btn btn-light">おみくじを引き直す。</button>
+            </div>
         </div>
-        <div id="hand-field" class="d-flex justify-content-around align-items-center">
-            <div class="hand_image"><img src="image/hand.png" alt=""></div>
-            <div class="arrow_img"><img src="image/arrow.png" alt=""></div>
-            <div id="sensor"><img src="image/sensor.png" alt=""></div>
-            <div class="arrow_img arrow_right"><img src="image/arrow.png" alt=""></div>
-            <div class="hand_image"><img src="image/hand.png" alt=""></div>
-        </div>
-        <button id="reload" type="button" class="btn btn-light">おみくじを引き直す。</button>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
