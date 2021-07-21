@@ -10,6 +10,7 @@ const fortuneNum = Math.floor(Math.random() * 5);
 // const fortuneNum = 4; // 凶
 let count = Math.floor(Math.random() * 2) + 2;
 const tigerNum = Math.floor(Math.random() * 2) + 1;
+let touchEvent = false;
 
 // Debug
 // resultDisp(0); // result画面表示
@@ -40,7 +41,7 @@ function resultDisp(count) {
     }
 }
 
-sensor.addEventListener("mouseover", function (event) {
+function omikujiCountDown() {
     anime.classList.add('animate__shakeY');
 
     setTimeout(function () {
@@ -49,7 +50,22 @@ sensor.addEventListener("mouseover", function (event) {
         console.log(count);
         resultDisp(count);
     }, 800);
+}
+
+// PC
+sensor.addEventListener("mouseover", function (event) {
+    if (!touchEvent) {
+        omikujiCountDown();
+    }
 }, false);
+
+// SP
+function startTouch(ev) {
+    omikujiCountDown();
+
+    touchEvent = true;
+}
+sensor.ontouchstart = startTouch;
 
 reload.onclick = function () {
     window.location.reload();
