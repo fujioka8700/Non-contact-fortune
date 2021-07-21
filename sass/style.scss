@@ -40,6 +40,12 @@ h1 {
     left: 65px;
 }
 
+#tiger-handfield_wrap {
+    padding: 7px;
+    margin: 7px;
+    border: 2px solid black;
+}
+
 #tiger {
     position: relative;
     display: block;
@@ -79,8 +85,23 @@ h1 {
     left: 240px;
 }
 
+#hand-field_wrap {
+    width: 318px;
+    border: 2px solid black;
+    text-align: center;
+    margin: 7px 0 0 0;
+
+    p {
+        display: inline-block;
+        background-color: #9f112c;
+        border-radius: 20px;
+        color: #fff;
+        margin: 7px auto;
+        padding: 5px;
+    }
+}
+
 #hand-field {
-    width: 300px;
     height: 100px;
     /* padding: 10px 0; */
 }
@@ -95,8 +116,12 @@ h1 {
     border-radius: 5px;
 }
 
-
 .button_style {
     width: 300px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.copyright {
     text-align: center;
 }
