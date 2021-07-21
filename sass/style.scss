@@ -1,8 +1,26 @@
 body {
-    background: blue;
+    background: gray;
 }
 
 h1 {
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    right: 35%;
+    width: 220px;
+    height: 220px;
+    margin: 0 auto;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    text-align: left;
+}
+
+#top-wrap {
+    background-image: url(../image/ichimatsu_red.png);
+    background-size: 100px 100px;
+    width: 351px;
+    padding: 28px 0;
+    position: relative;
     text-align: center;
 }
 
@@ -28,9 +46,9 @@ h1 {
 }
 
 .blockDown {
-    background-color: blue;
-    width: 200px;
-    height: 200px;
+    padding: 7px;
+    background: #fff;
+    border: 2px solid black;
 }
 
 .blockUp {
