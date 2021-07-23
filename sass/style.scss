@@ -1,4 +1,8 @@
 body {
+    font-family: "Noto Sans JP", "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
     background: gray;
 }
 
@@ -129,7 +133,7 @@ h1 {
 
 #fortune_str {
     background-color: #fff;
-    padding: 3px 0 3px 5px;
+    padding: 3px 0;
     border-radius: 5px;
 }
 
@@ -137,14 +141,6 @@ h1 {
     width: 300px;
     text-align: center;
     margin: 20px auto;
-}
-
-
-
-body {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
 }
 
 .main {
