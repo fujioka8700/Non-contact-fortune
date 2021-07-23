@@ -32,12 +32,6 @@ h1 {
     background: #fff;
 }
 
-#sensor {
-    /* background-color: red; */
-    /* width: 100px; */
-    /* height: 100px; */
-}
-
 #anime {
     position: absolute;
     top: 50px;
@@ -110,7 +104,6 @@ h1 {
     width: 318px;
     border: 2px solid black;
     text-align: center;
-    // margin: 7px 0 0 0;
 
     p {
         display: inline-block;
@@ -119,6 +112,10 @@ h1 {
         color: #fff;
         margin: 7px auto;
         padding: 5px;
+
+        .sp {
+            font-size: 0.8em;
+        }
     }
 }
 
@@ -158,7 +155,10 @@ h1 {
     background-size: 100px 100px;
 
     .copyright {
-
         text-align: center;
+
+        small {
+            font-weight: bold;
+        }
     }
 }

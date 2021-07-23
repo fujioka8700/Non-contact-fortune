@@ -32,12 +32,6 @@ h1 {
   background: #fff;
 }
 
-#sensor {
-  /* background-color: red; */
-  /* width: 100px; */
-  /* height: 100px; */
-}
-
 #anime {
   position: absolute;
   top: 50px;
@@ -118,6 +112,10 @@ h1 {
   padding: 5px;
 }
 
+#hand-field_wrap p .sp {
+  font-size: 0.8em;
+}
+
 #hand-field {
   height: 100px;
   /* padding: 10px 0; */
@@ -156,5 +154,9 @@ h1 {
 
 .footer .copyright {
   text-align: center;
+}
+
+.footer .copyright small {
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */
