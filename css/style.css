@@ -119,7 +119,28 @@ h1 {
   margin: 20px auto;
 }
 
-.copyright {
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main {
+  flex-grow: 1;
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  width: 351px;
+}
+
+.footer {
+  width: 351px;
+  margin: 0 auto;
+  background-image: url(../image/ichimatsu_red.png);
+  background-size: 100px 100px;
+}
+
+.footer .copyright {
   text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

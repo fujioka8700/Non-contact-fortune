@@ -13,7 +13,7 @@ const tigerNum = Math.floor(Math.random() * 2) + 1;
 let touchEvent = false;
 
 // Debug
-// resultDisp(0); // result画面表示
+resultDisp(0); // result画面表示
 // console.log(fortuneNum); // 運勢
 // console.log(count); // おみくじを振る回数
 

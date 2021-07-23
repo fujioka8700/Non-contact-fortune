@@ -51,10 +51,14 @@ h1 {
     display: block;
 }
 
-.blockDown {
+@mixin tiger-wrap() {
     padding: 7px;
     background: #fff;
     border: 2px solid black;
+}
+
+.blockDown {
+    @include tiger-wrap
 }
 
 .blockUp {
@@ -122,6 +126,30 @@ h1 {
     margin: 20px auto;
 }
 
-.copyright {
-    text-align: center;
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.main {
+    flex-grow: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    width: 351px;
+}
+
+.footer {
+    width: 351px;
+    margin: 0 auto;
+    background-image: url(../image/ichimatsu_red.png);
+    background-size: 100px 100px;
+
+    .copyright {
+
+        text-align: center;
+    }
 }
