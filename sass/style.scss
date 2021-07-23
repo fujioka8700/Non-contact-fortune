@@ -66,7 +66,20 @@ h1 {
     height: 50px;
 }
 
+.result-wrap {
+    // display: none;
+    border: 2px solid black;
+    margin: 7px;
+}
+
+.result-wrap_inner {
+    border: 2px solid black;
+    margin: 7px;
+    padding: 7px;
+}
+
 #result {
+    margin: 0 auto;
     display: none;
     // background-color: yellow;
     width: 300px;
