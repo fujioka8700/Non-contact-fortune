@@ -2,6 +2,7 @@ const tiger = document.getElementById("tiger");
 const sensor = document.getElementById("sensor");
 const anime = document.getElementById("anime");
 const result = document.getElementById("result");
+const resultWrap = document.getElementsByClassName("result-wrap");
 const reload = document.getElementById("reload");
 
 const fortune = ['大吉', '中吉', '小吉', '吉', '凶'];
@@ -37,6 +38,7 @@ function resultDisp(count) {
     if (count <= 0) {
         tiger.style.display = 'none';
         result.style.display = 'block';
+        resultWrap[0].style.display = 'block';
         fortuneCharacter(fortuneNum);
     }
 }
