@@ -6,23 +6,13 @@ const resultWrap = document.getElementsByClassName("result-wrap");
 const reload = document.getElementById("reload");
 
 const fortune = ['大吉', '中吉', '小吉', '吉', '凶'];
-
 const fortuneNum = Math.floor(Math.random() * 5);
-// const fortuneNum = 4; // 凶
-let count = Math.floor(Math.random() * 2) + 2;
 const tigerNum = Math.floor(Math.random() * 2) + 1;
+
+let count = Math.floor(Math.random() * 2) + 2;
 let touchEvent = false;
 
-// Debug
-// resultDisp(0); // result画面表示
-// console.log(fortuneNum); // 運勢
-// console.log(count); // おみくじを振る回数
-
-function fortuneCharacter(fortuneNum) {
-    let backResult = 'back_result.png';
-    if (fortuneNum === 4) {
-        backResult = 'back_result-bad.png';
-    }
+function resultInnerHtml(backResult, fortuneNum) {
     result.innerHTML = `
     <img src="../image/${backResult}" alt="">
     <div id="tiger_pos">
@@ -32,6 +22,14 @@ function fortuneCharacter(fortuneNum) {
         ${fortune[fortuneNum]}
     </div>
     `
+}
+
+function fortuneCharacter(fortuneNum) {
+    let backResult = 'back_result.png';
+    if (fortuneNum === 4) {
+        backResult = 'back_result-bad.png';
+    }
+    resultInnerHtml(backResult, fortuneNum);
 }
 
 function resultDisp(count) {
@@ -49,11 +47,11 @@ function omikujiCountDown() {
     setTimeout(function () {
         anime.classList.remove('animate__shakeY');
         count--;
-        console.log(count);
         resultDisp(count);
     }, 800);
 }
 
+// PCと、スマホの挙動変更
 // PC
 sensor.addEventListener("mouseover", function (event) {
     if (!touchEvent) {
@@ -62,7 +60,7 @@ sensor.addEventListener("mouseover", function (event) {
 }, false);
 
 // SP
-function startTouch(ev) {
+function startTouch() {
     omikujiCountDown();
 
     touchEvent = true;
