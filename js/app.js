@@ -14,9 +14,9 @@ let touchEvent = false;
 
 function resultInnerHtml(backResult, fortuneNum) {
     result.innerHTML = `
-    <img src="../image/${backResult}" alt="">
+    <img src="./image/${backResult}" alt="">
     <div id="tiger_pos">
-        <img src="../image/tiger0${tigerNum}.png" alt="">
+        <img src="./image/tiger0${tigerNum}.png" alt="">
     </div>
     <div id="fortune_str">
         ${fortune[fortuneNum]}

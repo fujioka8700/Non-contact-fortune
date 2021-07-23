@@ -1,2 +1,2 @@
-# 非接触おみくじ
+# おみくじ
 https://youtu.be/5zQklt2Fvv0
