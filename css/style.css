@@ -54,6 +54,7 @@ h1 {
   padding: 7px;
   background: #fff;
   border: 2px solid black;
+  margin: 0 0 7px 0;
 }
 
 .blockUp {
@@ -62,9 +63,11 @@ h1 {
 }
 
 .result-wrap {
-  display: none;
+  padding: 7px;
+  background: #fff;
   border: 2px solid black;
-  margin: 7px;
+  margin: 0 0 7px 0;
+  display: none;
 }
 
 .result-wrap_inner {
@@ -99,7 +102,6 @@ h1 {
   width: 318px;
   border: 2px solid black;
   text-align: center;
-  margin: 7px 0 0 0;
 }
 
 #hand-field_wrap p {
