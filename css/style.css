@@ -92,12 +92,6 @@ h1 {
   left: 80px;
 }
 
-#fortune_str {
-  position: absolute;
-  top: 12px;
-  left: 240px;
-}
-
 #hand-field_wrap {
   width: 318px;
   border: 2px solid black;
@@ -130,6 +124,9 @@ h1 {
   background-color: #fff;
   padding: 3px 0;
   border-radius: 5px;
+  position: absolute;
+  top: 12px;
+  left: 240px;
 }
 
 .button_style {

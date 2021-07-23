@@ -1,3 +1,10 @@
+@mixin tiger-wrap() {
+    padding: 7px;
+    background: #fff;
+    border: 2px solid black;
+    margin: 0 0 7px 0;
+}
+
 body {
     font-family: "Noto Sans JP", "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
     display: flex;
@@ -50,13 +57,6 @@ h1 {
     display: block;
 }
 
-@mixin tiger-wrap() {
-    padding: 7px;
-    background: #fff;
-    border: 2px solid black;
-    margin: 0 0 7px 0;
-}
-
 .blockDown {
     @include tiger-wrap;
 }
@@ -95,12 +95,6 @@ h1 {
     left: 80px;
 }
 
-#fortune_str {
-    position: absolute;
-    top: 12px;
-    left: 240px;
-}
-
 #hand-field_wrap {
     width: 318px;
     border: 2px solid black;
@@ -133,6 +127,9 @@ h1 {
     background-color: #fff;
     padding: 3px 0;
     border-radius: 5px;
+    position: absolute;
+    top: 12px;
+    left: 240px;
 }
 
 .button_style {
