@@ -3,7 +3,7 @@
 
 https://youtu.be/5zQklt2Fvv0
 
-<hr>
+<br>
 
 この動画を参考にして、おみくじアプリを作りました。
 
